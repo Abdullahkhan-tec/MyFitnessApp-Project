@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/supplement_bg"
+        android:scaleType="centerCrop" />
+
+    <!-- Dark Overlay -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88000000" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- TITLE -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Which supplement do you use?"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:paddingBottom="24dp" />
+
+            <!-- ================= SELECTION LAYOUT ================= -->
+            <LinearLayout
+                android:id="@+id/layoutSelection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Creatine -->
+                <LinearLayout
+                    android:id="@+id/cardCreatine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/rounded_white_card"
+                    android:padding="16dp"
+                    android:layout_marginBottom="12dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/creatine" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Creatine"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"
+                        android:paddingStart="16dp" />
+                </LinearLayout>
+
+                <!-- Whey -->
+                <LinearLayout
+                    android:id="@+id/cardWhey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/rounded_white_card"
+                    android:padding="16dp"
+                    android:layout_marginBottom="12dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/whey_protien" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Whey Protein"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"
+                        android:paddingStart="16dp" />
+                </LinearLayout>
+
+                <!-- Fat Burner -->
+                <LinearLayout
+                    android:id="@+id/cardFatBurner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/rounded_white_card"
+                    android:padding="16dp"
+                    android:layout_marginBottom="12dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/fat_burner" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fat Burner"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"
+                        android:paddingStart="16dp" />
+                </LinearLayout>
+
+                <!-- Mass Gainer -->
+                <LinearLayout
+                    android:id="@+id/cardMassGainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/rounded_white_card"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/mass_gainer" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mass Gainer"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"
+                        android:paddingStart="16dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- ================= INFO LAYOUT ================= -->
+            <LinearLayout
+                android:id="@+id/layoutInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:background="@drawable/rounded_white_card"
+                android:padding="24dp"
+                android:layout_marginTop="24dp">
+
+                <TextView
+                    android:id="@+id/tvSupplementTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:paddingBottom="12dp" />
+
+                <TextView
+                    android:id="@+id/tvSupplementInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="#444444"
+                    android:lineSpacingExtra="6dp" />
+
+                <!-- ✅ AI TIP -->
+                <TextView
+                    android:id="@+id/tvAITip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="AI Tip will appear here..."
+                    android:textColor="#FF5722"
+                    android:textSize="15sp"
+                    android:paddingTop="16dp"
+                    android:lineSpacingExtra="4dp"/>
+
+                <!-- ✅ BACK BUTTON -->
+                <TextView
+                    android:id="@+id/btnBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="← Back"
+                    android:textColor="#FF5722"
+                    android:textSize="16sp"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="8dp"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/supplement_bg"
+        android:scaleType="centerCrop"
+        android:contentDescription="Background" />
+
+    <!-- Scrollable content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Recommended Supplements"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:paddingBottom="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!-- Whey -->
+            <LinearLayout
+                android:id="@+id/cardWhey"
+                android:background="@drawable/rounded_white_card"
+                android:padding="20dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/whey_protien"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"/>
+
+                <TextView
+                    android:text="Whey Protein"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:paddingStart="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- Mass Gainer -->
+            <LinearLayout
+                android:id="@+id/cardMass"
+                android:background="@drawable/rounded_white_card"
+                android:padding="20dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/mass_gainer"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"/>
+
+                <TextView
+                    android:text="Mass Gainer"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:paddingStart="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- Creatine -->
+            <LinearLayout
+                android:id="@+id/cardCreatine"
+                android:background="@drawable/rounded_white_card"
+                android:padding="20dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/creatine"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"/>
+
+                <TextView
+                    android:text="Creatine"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:paddingStart="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- Fat Burner -->
+            <LinearLayout
+                android:id="@+id/cardFat"
+                android:background="@drawable/rounded_white_card"
+                android:padding="20dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/fat_burner"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"/>
+
+                <TextView
+                    android:text="Fat Burner"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:paddingStart="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- AI Tip TextView -->
+            <TextView
+                android:id="@+id/tvAISupplementTip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="24dp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

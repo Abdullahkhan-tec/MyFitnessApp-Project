@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/muscle_bg"
+        android:scaleType="centerCrop" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88000000" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/tvMuscleTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Muscle Group"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:paddingBottom="24dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_white_card"
+                android:padding="24dp">
+
+                <TextView
+                    android:id="@+id/tvMuscleNames"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#444444"
+                    android:lineSpacingExtra="6dp" />
+
+                <TextView
+                    android:id="@+id/tvAIMuscleTip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="AI tip will appear here..."
+                    android:textSize="14sp"
+                    android:textColor="#333333"
+                    android:paddingTop="16dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

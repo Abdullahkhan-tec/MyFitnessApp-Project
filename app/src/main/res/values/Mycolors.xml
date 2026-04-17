@@ -1,0 +1,6 @@
+<resources>
+    <color name="primaryColor">#4CAF50</color> <!-- Green accent -->
+    <color name="lightBackground">#FFFFFF</color> <!-- White background -->
+    <color name="lightButtonBackground">#E0E0E0</color> <!-- Light gray button -->
+    <color name="textColor">#000000</color> <!-- Default text color -->
+</resources>

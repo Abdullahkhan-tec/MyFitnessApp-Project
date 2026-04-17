@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bmi_bg"
+        android:scaleType="centerCrop" />
+
+    <!-- Overlay -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="28dp"
+            android:gravity="center_horizontal">
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/tvBmiTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BMI Calculator"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="28dp" />
+
+            <!-- Card with rounded corners -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_white_card"
+                android:padding="28dp"
+                android:elevation="8dp">
+
+                <!-- Height -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Height (cm)"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="6dp" />
+
+                <EditText
+                    android:id="@+id/etHeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:inputType="numberDecimal"
+                    android:background="@android:drawable/editbox_background"
+                    android:padding="12dp"
+                    android:layout_marginBottom="18dp" />
+
+                <!-- Weight -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Weight (kg)"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="6dp" />
+
+                <EditText
+                    android:id="@+id/etWeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:inputType="numberDecimal"
+                    android:background="@android:drawable/editbox_background"
+                    android:padding="12dp"
+                    android:layout_marginBottom="24dp" />
+
+                <!-- Button -->
+                <Button
+                    android:id="@+id/btnCalculate"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="CALCULATE BMI"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:backgroundTint="#FF8C00" />
+
+                <TextView
+                    android:id="@+id/tvResult"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Your BMI will appear here"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:paddingTop="20dp"
+                    android:gravity="center" />
+                <!-- Add this inside the LinearLayout after tvResult -->
+                <TextView
+                    android:id="@+id/tvAITip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="AI Tips will appear here..."
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:padding="12dp"
+                    android:background="#66FF8C00"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_vertical"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

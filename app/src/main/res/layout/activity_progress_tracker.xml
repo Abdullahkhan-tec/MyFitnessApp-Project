@@ -1,0 +1,79 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/progress_bg"
+        android:scaleType="centerCrop"/>
+
+    <!-- Dark overlay -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88000000"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Progress Tracker"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:paddingBottom="24dp"/>
+
+            <!-- Weight Spinner -->
+            <Spinner
+                android:id="@+id/spinnerWeight"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_orange_box"
+                android:spinnerMode="dropdown"
+                android:padding="8dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Workout Spinner -->
+            <Spinner
+                android:id="@+id/spinnerWorkout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_orange_box"
+                android:spinnerMode="dropdown"
+                android:padding="8dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Add Log Button -->
+            <Button
+                android:id="@+id/btnAddLog"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Add Log"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:backgroundTint="#FF8C00"
+                android:layout_marginBottom="24dp"/>
+
+            <!-- Logs Container -->
+            <LinearLayout
+                android:id="@+id/logsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

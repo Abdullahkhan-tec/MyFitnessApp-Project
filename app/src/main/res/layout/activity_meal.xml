@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/meal_bg"
+        android:scaleType="centerCrop" />
+
+    <!-- Dark Overlay -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000" />
+
+    <!-- Scroll Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center_horizontal">
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/tvMealTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meal Plans"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:paddingBottom="32dp" />
+            <!-- AI Meal Tip -->
+            <TextView
+                android:id="@+id/tvAIMealTip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AI Meal Suggestion will appear here"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:background="#66000000"
+                android:padding="16dp"
+                android:layout_marginBottom="24dp"
+                android:gravity="center" />
+
+
+
+            <!-- Weight Gain Card -->
+            <LinearLayout
+                android:id="@+id/cardGain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/rounded_white_card"
+                android:padding="24dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_meal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Weight Gain Plan"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:paddingStart="16dp" />
+            </LinearLayout>
+
+            <!-- Weight Loss Card -->
+            <LinearLayout
+                android:id="@+id/cardLoss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/rounded_white_card"
+                android:padding="24dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_meal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Weight Loss Plan"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:paddingStart="16dp" />
+            </LinearLayout>
+
+            <!-- Maintenance Card -->
+            <LinearLayout
+                android:id="@+id/cardMaintain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/rounded_white_card"
+                android:padding="24dp"
+                android:layout_marginBottom="24dp"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_meal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Maintenance Plan"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:paddingStart="16dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

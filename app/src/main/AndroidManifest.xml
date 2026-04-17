@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myfitnessapp">
+
+    <!-- Internet permission for backend calls -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_fitness_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_fitness_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyFitnessApp"
+        android:usesCleartextTraffic="true"> <!-- Needed for HTTP backend -->
+
+        <!-- Activities -->
+        <activity android:name=".SplashActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" android:exported="true" />
+        <activity android:name=".RegisterActivity" android:exported="true" />
+        <activity android:name=".DashboardActivity" android:exported="true" />
+        <activity android:name=".BmiActivity" android:exported="true" />
+        <activity android:name=".WorkoutActivity" android:exported="true" />
+        <activity android:name=".MealActivity" android:exported="true" />
+        <activity android:name=".MealDetailActivity" android:exported="true" />
+        <activity android:name=".SupplementActivity" android:exported="true" />
+        <activity android:name=".SupplementDetaiActivity" android:exported="true" />
+        <activity android:name=".SupplementInfoActivity" android:exported="true" />
+        <activity android:name=".ProgressTrackerActivity" android:exported="true" />
+        <activity android:name=".TipsActivity" android:exported="true" />
+        <activity android:name=".MuscleScienceActivity" android:exported="true" />
+        <activity android:name=".MuscleDetailActivity" android:exported="false" />
+    </application>
+
+</manifest>
